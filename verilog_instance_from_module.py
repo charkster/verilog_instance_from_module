@@ -1,5 +1,5 @@
 import re
-with open('C:\\temp\\jhelum_rtl_snapshot\\dig_core.sv', 'r') as file:
+with open('C:\\verilog_file.sv', 'r') as file:
     file_content = file.read()
 port_pattern = r"\n\s*(input|output|inout)\s+(reg|wire|logic)?\s*(\[\d+:\d+\])?\s+(\w+)\s*"
 ports = re.findall(port_pattern, file_content)
